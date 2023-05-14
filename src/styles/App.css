@@ -1,3 +1,16 @@
+*{
+    background-color: black;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    border: 1px solid aqua;
+}
+
 h1 {
     color: #27aedb;
     text-align: center;
@@ -9,4 +22,45 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+input{
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    width: 100%;
+    height: 70px;
+    overflow-x: scroll;
+    font-size: 20px;
+}
+
+text:focus, input:focus{
+    border: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid>*{
+    border: 1px solid aqua; 
+    height: 50px;
+}
+
+.item7{
+   grid-row: 2 / 4;
+   grid-column: 4 / 5;
+   border: 1px solid aqua; 
+height: 100px;
+}
+
+.item14{
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+    border: 1px solid aqua; 
+    height: 100px;
+
 }
