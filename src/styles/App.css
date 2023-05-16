@@ -2,26 +2,33 @@
     background-color: black;
 }
 
-#container{
+.calculator{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 30%;
-    border: 1px solid aqua;
+    border: 2px solid aqua;
 }
 
 h1 {
     color: #27aedb;
     text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
     }
     
 
 button{
-    color: #27aedb;
+    color: black;
+    font-size: 1.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: beige;
 }
 
 input{
@@ -62,5 +69,8 @@ height: 100px;
     grid-column: 4 / 5;
     border: 1px solid aqua; 
     height: 100px;
+}
 
+hr{
+    border: 0.1px solid aqua;
 }
